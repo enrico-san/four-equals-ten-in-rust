@@ -39,7 +39,7 @@ fn run(n: &String, op: &String, cycles: i32) -> i32 {
         for exp in exps {
             let r = meval::eval_str(&exp).unwrap();
             if r == 10.0 {
-                println!("{}: {} = {}", count, exp, r);
+                println!("found in {}: {} = {}", count, exp, r);
                 return count;
             }
         }
